@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   transition: all 0.3s ease;
+   box-sizing: border-box;
+   text-decoration: none;
+   flex-wrap: wrap;
+   font-family: 'Nunito', sans-serif;
+   scroll-behavior: smooth;
+   text-transform: capitalize;
+   list-style: none;
+}
+
+body {
+   background: #F9F8F6;
+}
+
+header.header {
+   display: flex;
+   justify-content: space-between;
+   background: #F9F8F6;
+   align-items: center;
+   padding: 15px 30px;
+   text-transform: uppercase;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 100;
+}
+
+.header .container-1 a {
+   margin-left: 25px;
+   color: #58595B;
+}
+
+.header .container-2 h1 {
+   color: #58595B;
+   margin-left: 80px;
+}
+
+.header .container-3 h4 {
+   display: inline;
+}
+
+.header .container-3 a {
+   color: #58595B;
+   margin-left: 20px;
+}
+
+.header .container-3 i {
+   font-size: 25px;
+}
+
+.header .container-3 .active {
+   border-bottom: 2px solid #58595B;
+}
+
+.menu-phone {
+   display: none;
+   background: #fff;
+   width: 100%;
+   position: absolute;
+   top: -1px;
+   left: -768px;
+   padding: 0px 30px;
+   padding-bottom: 200px;
+}
+
+.menu-phone ul img {
+   margin-top: 70px;
+   margin-bottom: 50px;
+}
+
+#menu-icon {
+   font-size: 45px;
+   position: absolute;
+   color: #58595B;
+}
+
+.menu-phone ul {
+   list-style: none;
+   margin-top: 100px;
+   text-align: center;
+}
+
+.menu-phone li {
+   margin-top: 10px;
+   border-bottom: 2px solid #58595B;
+   padding: 10px 0;
+}
+
+.menu-phone ul .share i {
+   margin-left: 10px;
+   font-size: 45px;
+   margin-top: 50px;
+   color: #58595B;
+}
+
+.header .container-2 i {
+   display: none;
+}
+
+.content .container {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 100px;
+   margin-top: 100px;
+   justify-content: space-between;
+}
+
+.content .container .item-1 {
+   flex-basis: 30%;
+}
+
+.content .container .item-1 h1 {
+   color: #58595B;
+   font-size: 25px;
+}
+
+.content .container .item-1 p {
+   color: #58595B;
+   margin-top: 25px;
+}
+
+.content .container .item-2 {
+   flex-basis: 63%;
+}
+
+.content .container .item-2 .uk-accordion-title {
+   color: #58595B;
+   font-size: 20px;
+   text-transform: uppercase;
+   border-bottom: 2px solid #58595B;
+   padding: 10px;
+}
+
+.content .container .item-2 .second {
+   margin-top: 25px;
+}
+
+.content .container .item-2 .uk-accordion-content {
+   border: none;
+   color: #58595B;
+}
+
+.content .container .item-2 .uk-accordion-content .text {
+   display: inline-block;
+   margin-top: 15px;
+}
+
+.content .container .item-2 .uk-accordion-content .content-2 {
+   margin-top: 35px;
+   display: inline-block;
+}
+
+.content .container .item-2 .uk-accordion-content .header-2 {
+   font-size: 25px;
+   margin-bottom: 15px;
+   display: inline-block;
+}
+
+
+.footer {
+   padding: 50px 100px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer .container-1 {
+   display: flex;
+}
+
+.footer .container-1 .share {
+   width: 70px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer .container-1 .share i {
+   font-size: 25px;
+   color: #58595B;
+}
+
+.footer .container-1 a {
+   color: #58595B;
+   font-size: 18px;
+   text-transform: uppercase;
+   margin-left: 30px;
+}
+
+
+@media only screen and (max-width:770px) {
+
+
+   header.header .none {
+      display: none;
+   }
+
+   .menu-phone {
+      display: block;
+      font-size: 25px;
+      position: absolute;
+      margin-top: 10px;
+      left: -968px;
+      height: 100vh;
+   }
+
+   .header .container-2 i {
+      display: block;
+   }
+
+   .content .container {
+      padding: 20px;
+   }
+
+   .content .container .item-1 {
+      flex-basis: 36%;
+   }
+
+   .header .container-2 .box-line {
+      display: block;
+      position: absolute;
+      top: 20px;
+   }
+
+   .header .container-2 .line {
+      width: 40px;
+      height: 5px;
+      background: #58595B;
+   }
+
+   .header .container-2 .line:not(:first-child) {
+      margin-top: 7px;
+   }
+}
+
+@media only screen and (max-width:600px) {
+
+   .footer {
+      padding: 50px 10px;
+      padding-bottom: 10px;
+   }
+
+   .footer .container-1 .share {
+      display: flex;
+      margin: 0 auto;
+      margin-bottom: 20px;
+   }
+
+   .footer .container-1 {
+      display: block;
+      text-align: center;
+   }
+
+   .footer .container-2 {
+      margin: 0 auto;
+      margin-top: 20px;
+      font-size: 25px;
+   }
+
+   .content .container {
+      display: block;
+   }
+
+   .content .container .item-2 {
+      margin-top: 30px;
+   }
+
+   .content .container .item-2 .uk-accordion-title {
+      padding: 10px 0;
+      font-size: 18px;
+   }
+}
+
+@media only screen and (max-width:400px) {
+   .content .container .item-2 .uk-accordion-title {
+      font-size: 16px;
+   }
+}
